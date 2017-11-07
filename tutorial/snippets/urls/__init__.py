@@ -1,5 +1,6 @@
 from django.conf.urls import include, url
-from . import cbv, fbv
+
+from . import cbv, fbv, cbv_mixins
 
 urlpatterns = [
     url(r'^fbv/', include(fbv, namespace='fbv')),
